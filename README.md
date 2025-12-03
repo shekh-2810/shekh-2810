@@ -40,16 +40,18 @@ I mix exploration, development, and security research to create tools and workfl
 Feel free to check out my projects, experiments, and ongoing work.
 
 ---
+<!-- README-STATS:START -->
 
-### Metrics & Stats
-
-![Stats](https://github-readme-stats.vercel.app/api?username=shekh-2810&show_icons=true&theme=transparent)
-![Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=shekh-2810&layout=compact&theme=transparent)
-![Streak](https://streak-stats.demolab.com/?user=shekh-2810&theme=transparent)
-
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=shekh-2810&theme=github-compact)
-
+<!-- Profile views (very reliable) -->
 ![Profile Views](https://komarev.com/ghpvc/?username=shekh-2810&color=blue)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=shekh-2810&layout=compact&theme=transparent)
+<!-- Contribution graph (native, already works) -->
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=shekh-2810&theme=github-compact)
 
+<!-- GitHub Stats (alternate mirror that often works) -->
+![GitHub Stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=shekh-2810&show_icons=true&theme=transparent)
+
+<!-- Top languages (alternate mirror) -->
+![Top Langs](https://github-readme-stats-git-main-ajmain2002.vercel.app/api/top-langs/?username=shekh-2810&layout=compact)
+
+<!-- README-STATS:END -->
