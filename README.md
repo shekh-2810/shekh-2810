@@ -40,7 +40,6 @@ I mix exploration, development, and security research to create tools and workfl
 Feel free to check out my projects, experiments, and ongoing work.
 
 ---
-<!-- README-STATS:START -->
 
 <!-- Profile views (very reliable) -->
 ![Profile Views](https://komarev.com/ghpvc/?username=shekh-2810&color=blue)
@@ -53,5 +52,9 @@ Feel free to check out my projects, experiments, and ongoing work.
 
 <!-- Top languages (alternate mirror) -->
 ![Top Langs](https://github-readme-stats-git-main-ajmain2002.vercel.app/api/top-langs/?username=shekh-2810&layout=compact)
+
+
+<!-- README-STATS:START -->
+
 
 <!-- README-STATS:END -->
