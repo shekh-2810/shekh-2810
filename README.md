@@ -34,8 +34,8 @@ Recon engineering + pragmatic development → usable security tooling.
 ---
 
 ### Projects (active / public)
-- **DocInferX** — automation for data discovery (public)  
-- **AstraLock** — experimental tool for API fuzzing (public)  
+- **DocInferX** —  (public)  
+- **AstraLock** —  (public)  
 - **DNStrix** — *classified* (let them wonder if it lands)  
 
 <!-- Hidden note: DNStrix remains under wraps. Guessing game: will it be pushed? -->
