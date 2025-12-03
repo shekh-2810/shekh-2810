@@ -38,3 +38,18 @@ I like building from scratch, experimenting with ideas, and refining systems unt
 I mix exploration, development, and security research to create tools and workflows that actually solve problems.
 
 Feel free to check out my projects, experiments, and ongoing work.
+
+---
+
+### Metrics & Stats
+
+![Stats](https://github-readme-stats.vercel.app/api?username=shekh-2810&show_icons=true&theme=transparent)
+![Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=shekh-2810&layout=compact&theme=transparent)
+![Streak](https://streak-stats.demolab.com/?user=shekh-2810&theme=transparent)
+
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=shekh-2810&theme=github-compact)
+
+![Profile Views](https://komarev.com/ghpvc/?username=shekh-2810&color=blue)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=shekh-2810&layout=compact&theme=transparent)
+
