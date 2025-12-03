@@ -18,7 +18,12 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.PAT }}
           TIMEZONE: "Asia/Kolkata"
+          # Choose which sections to generate
           FEATURES: "DAY_STATS,WEEK_STATS,LANGUAGE_STATS"
+          # Dark hacker aesthetic + compact output + percent bars for languages
+          THEME: "DARK"
+          COMPACT: "true"
+          STYLE: "PERCENT"
 
       - name: Commit & push changes
         run: |
