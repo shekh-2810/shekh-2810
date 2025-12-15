@@ -13,22 +13,54 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
 
-      - name: Run github-readme-stats updater
+      - name: Generate activity stats
         uses: mahyarmirrashed/action-github-readme-stats@v2.1
         with:
           GITHUB_TOKEN: ${{ secrets.PAT }}
           TIMEZONE: "Asia/Kolkata"
-          # Choose which sections to generate
           FEATURES: "DAY_STATS,WEEK_STATS,LANGUAGE_STATS"
-          # Dark hacker aesthetic + compact output + percent bars for languages
           THEME: "DARK"
           COMPACT: "true"
           STYLE: "PERCENT"
+
+      - name: Fetch total commits and repos
+        env:
+          GH_TOKEN: ${{ secrets.PAT }}
+        run: |
+          USER="shekh-2810"
+
+          # Repo count
+          REPOS=$(curl -s -H "Authorization: token $GH_TOKEN" \
+            "https://api.github.com/users/$USER" | jq '.public_repos')
+
+          # Commit count (sum commits across repos)
+          COMMITS=0
+          PAGE=1
+
+          while :; do
+            DATA=$(curl -s -H "Authorization: token $GH_TOKEN" \
+              "https://api.github.com/users/$USER/repos?per_page=100&page=$PAGE")
+
+            COUNT=$(echo "$DATA" | jq 'length')
+            [ "$COUNT" -eq 0 ] && break
+
+            for repo in $(echo "$DATA" | jq -r '.[].name'); do
+              C=$(curl -s -H "Authorization: token $GH_TOKEN" \
+                "https://api.github.com/repos/$USER/$repo/stats/contributors" \
+                | jq 'map(select(.author.login=="'"$USER"'"))[0].total // 0')
+              COMMITS=$((COMMITS + C))
+            done
+
+            PAGE=$((PAGE + 1))
+          done
+
+          sed -i "s/{{REPO_COUNT}}/$REPOS/g" README.md
+          sed -i "s/{{COMMIT_COUNT}}/$COMMITS/g" README.md
 
       - name: Commit & push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "chore(readme): update stats" || echo "no changes to commit"
+          git commit -m "chore(readme): update stats" || echo "no changes"
           git push
