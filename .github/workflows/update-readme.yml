@@ -31,23 +31,24 @@ jobs:
         run: |
           USER="shekh-2810"
 
-          # Get public repo count
+          # Public repo count
           REPOS=$(curl -s \
             -H "Authorization: bearer $GH_TOKEN" \
             https://api.github.com/users/$USER \
-            | jq '.public_repos')
+            | jq -r '.public_repos // 0')
 
-          # Get total lifetime commit count (GraphQL, same as profile)
+          # Total lifetime commit count (GraphQL)
           COMMITS=$(curl -s -X POST https://api.github.com/graphql \
             -H "Authorization: bearer $GH_TOKEN" \
             -H "Content-Type: application/json" \
             -d '{
               "query": "query { user(login: \"'"$USER"'\") { contributionsCollection { totalCommitContributions } } }"
             }' \
-            | jq '.data.user.contributionsCollection.totalCommitContributions')
+            | jq -r '.data.user.contributionsCollection.totalCommitContributions // 0')
 
-          sed -i "s/{{REPO_COUNT}}/$REPOS/g" README.md
-          sed -i "s/{{COMMIT_COUNT}}/$COMMITS/g" README.md
+          # Idempotent README update (safe on every run)
+          sed -i "s/^📦 Repositories:.*/📦 Repositories: $REPOS/" README.md
+          sed -i "s/^🧾 Total commits:.*/🧾 Total commits: $COMMITS/" README.md
 
       - name: Commit & push changes
         run: |
