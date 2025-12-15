@@ -47,6 +47,11 @@ Recon engineering + pragmatic development → usable security tooling.
 
 ---
 
+{{REPO_COUNT}}
+
+{{COMMIT_COUNT}}
+
+
 ### Metrics & live stats
 <!-- README-STATS:START -->
 
