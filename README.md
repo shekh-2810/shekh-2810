@@ -49,8 +49,6 @@ Recon engineering + pragmatic development → usable security tooling.
 
 📦 Repositories: 3
 
-🧾 Total commits: 36
-
 
 ### Metrics & live stats
 <!-- README-STATS:START -->
