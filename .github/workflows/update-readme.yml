@@ -1,4 +1,5 @@
 name: Update README Stats
+
 on:
   workflow_dispatch:
   schedule:
@@ -7,6 +8,7 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -23,36 +25,26 @@ jobs:
           COMPACT: "true"
           STYLE: "PERCENT"
 
-      - name: Fetch total commits and repos
+      - name: Fetch total commits and repos (accurate, lifetime)
         env:
           GH_TOKEN: ${{ secrets.PAT }}
         run: |
           USER="shekh-2810"
 
-          # Repo count
-          REPOS=$(curl -s -H "Authorization: token $GH_TOKEN" \
-            "https://api.github.com/users/$USER" | jq '.public_repos')
+          # Get public repo count
+          REPOS=$(curl -s \
+            -H "Authorization: bearer $GH_TOKEN" \
+            https://api.github.com/users/$USER \
+            | jq '.public_repos')
 
-          # Commit count (sum commits across repos)
-          COMMITS=0
-          PAGE=1
-
-          while :; do
-            DATA=$(curl -s -H "Authorization: token $GH_TOKEN" \
-              "https://api.github.com/users/$USER/repos?per_page=100&page=$PAGE")
-
-            COUNT=$(echo "$DATA" | jq 'length')
-            [ "$COUNT" -eq 0 ] && break
-
-            for repo in $(echo "$DATA" | jq -r '.[].name'); do
-              C=$(curl -s -H "Authorization: token $GH_TOKEN" \
-                "https://api.github.com/repos/$USER/$repo/stats/contributors" \
-                | jq 'map(select(.author.login=="'"$USER"'"))[0].total // 0')
-              COMMITS=$((COMMITS + C))
-            done
-
-            PAGE=$((PAGE + 1))
-          done
+          # Get total lifetime commit count (GraphQL, same as profile)
+          COMMITS=$(curl -s -X POST https://api.github.com/graphql \
+            -H "Authorization: bearer $GH_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "query": "query { user(login: \"'"$USER"'\") { contributionsCollection { totalCommitContributions } } }"
+            }' \
+            | jq '.data.user.contributionsCollection.totalCommitContributions')
 
           sed -i "s/{{REPO_COUNT}}/$REPOS/g" README.md
           sed -i "s/{{COMMIT_COUNT}}/$COMMITS/g" README.md
