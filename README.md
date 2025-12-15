@@ -47,9 +47,9 @@ Recon engineering + pragmatic development → usable security tooling.
 
 ---
 
-3
+#### 📦 Repositories:  3
 
-0
+#### 🧾 Total commits: 0
 
 
 ### Metrics & live stats
