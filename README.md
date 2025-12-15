@@ -47,9 +47,9 @@ Recon engineering + pragmatic development → usable security tooling.
 
 ---
 
-#### 📦 Repositories:  3
+sed -i "s/^📦 Repositories:.*/📦 Repositories: $REPOS/" README.md
 
-#### 🧾 Total commits: 0
+sed -i "s/^🧾 Total commits:.*/🧾 Total commits: $COMMITS/" README.md
 
 
 ### Metrics & live stats
