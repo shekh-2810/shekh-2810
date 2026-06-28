@@ -56,22 +56,22 @@ Recon engineering + pragmatic development → usable security tooling.
 ```
 🕰️ I get my jam on during the daytime!
 
-🌞 Morning  	14     commits	█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░	4.11%
-🌆 Daytime  	241    commits	██████████████████████████████	70.67%
-🌃 Evening  	38     commits	████░░░░░░░░░░░░░░░░░░░░░░░░░░	11.14%
-🌙 Night    	48     commits	█████░░░░░░░░░░░░░░░░░░░░░░░░░	14.08%
+🌞 Morning  	14     commits	█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░	4.09%
+🌆 Daytime  	242    commits	██████████████████████████████	70.76%
+🌃 Evening  	38     commits	████░░░░░░░░░░░░░░░░░░░░░░░░░░	11.11%
+🌙 Night    	48     commits	█████░░░░░░░░░░░░░░░░░░░░░░░░░	14.04%
 ```
 
 ```
 📅 I'm most productive on Wednesdays!
 
-Monday      	41     commits	███████████░░░░░░░░░░░░░░░░░░░	12.02%
-Tuesday     	30     commits	████████░░░░░░░░░░░░░░░░░░░░░░	8.80%
-Wednesday   	105    commits	██████████████████████████████	30.79%
-Thursday    	57     commits	████████████████░░░░░░░░░░░░░░	16.72%
-Friday      	40     commits	███████████░░░░░░░░░░░░░░░░░░░	11.73%
-Saturday    	30     commits	████████░░░░░░░░░░░░░░░░░░░░░░	8.80%
-Sunday      	38     commits	██████████░░░░░░░░░░░░░░░░░░░░	11.14%
+Monday      	41     commits	███████████░░░░░░░░░░░░░░░░░░░	11.99%
+Tuesday     	30     commits	████████░░░░░░░░░░░░░░░░░░░░░░	8.77%
+Wednesday   	105    commits	██████████████████████████████	30.70%
+Thursday    	57     commits	████████████████░░░░░░░░░░░░░░	16.67%
+Friday      	40     commits	███████████░░░░░░░░░░░░░░░░░░░	11.70%
+Saturday    	30     commits	████████░░░░░░░░░░░░░░░░░░░░░░	8.77%
+Sunday      	39     commits	███████████░░░░░░░░░░░░░░░░░░░	11.40%
 ```
 
 ```
