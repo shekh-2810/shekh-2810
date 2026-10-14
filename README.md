@@ -9,19 +9,11 @@
   <em>Security Researcher • Recon Engineering • Dev-first mindset</em>
 </p>
 
-<p align="center">
-  <!-- Profile views (stable) -->
-  <img src="https://komarev.com/ghpvc/?username=shekh-2810&color=blue" alt="profile views" />
-  &nbsp;&nbsp;
-  <!-- Contribution graph (native, reliable) -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=shekh-2810&theme=github-compact" alt="activity graph" />
-</p>
-
 ---
 
-### About — short & sharp
+### About
 I map, automate, and test web systems. I build small tools that make security testing repeatable and faster.  
-Recon engineering + pragmatic development → usable security tooling.
+- Recon engineering + pragmatic development → usable security tooling.
 
 ---
 
@@ -30,6 +22,7 @@ Recon engineering + pragmatic development → usable security tooling.
 - Recon pipelines on Linux 
 - Automation: Bash, Python, tooling, small services  
 - Practical utilities to streamline testing workflows
+- Building digital infrastructure 
 
 ---
 
@@ -89,18 +82,17 @@ HTML        	2      repos	███████████████░░░
 ---
 
 ### Quick links
-- Repo (this profile): `https://github.com/shekh-2810`
-- More: check repos below
+- [GitHub](https://github.com/shekh-2810)
+- [More Repositories](https://github.com/shekh-2810?tab=repositories)
 
 ---
 
-### Signature — tiny challenge
-I follow anomalies, not headlines.
-
-Find the path where 404s whisper.
-
-The rest is in the report.
+### Signature 
+I follow anomalies, not headlines. Where 404s whisper, I start looking.
 
 ---
 
 <p align="center">Made with ⚙️ + ☕ — coding, testing, iterating.</p>
+<div align="center">
+  <sub>Build small. Test deeply. Ship responsibly.</sub>
+</div>
