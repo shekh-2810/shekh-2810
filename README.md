@@ -49,22 +49,22 @@ I map, automate, and test web systems. I build small tools that make security te
 ```
 🕰️ I get my jam on during the daytime!
 
-🌞 Morning  	16     commits	█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░	3.47%
-🌆 Daytime  	328    commits	██████████████████████████████	71.15%
-🌃 Evening  	58     commits	█████░░░░░░░░░░░░░░░░░░░░░░░░░	12.58%
-🌙 Night    	59     commits	█████░░░░░░░░░░░░░░░░░░░░░░░░░	12.80%
+🌞 Morning  	16     commits	█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░	3.46%
+🌆 Daytime  	328    commits	██████████████████████████████	71.00%
+🌃 Evening  	59     commits	█████░░░░░░░░░░░░░░░░░░░░░░░░░	12.77%
+🌙 Night    	59     commits	█████░░░░░░░░░░░░░░░░░░░░░░░░░	12.77%
 ```
 
 ```
 📅 I'm most productive on Wednesdays!
 
-Monday      	70     commits	█████████████████████░░░░░░░░░	15.18%
-Tuesday     	52     commits	███████████████░░░░░░░░░░░░░░░	11.28%
-Wednesday   	99     commits	██████████████████████████████	21.48%
-Thursday    	73     commits	██████████████████████░░░░░░░░	15.84%
-Friday      	56     commits	████████████████░░░░░░░░░░░░░░	12.15%
-Saturday    	59     commits	█████████████████░░░░░░░░░░░░░	12.80%
-Sunday      	52     commits	███████████████░░░░░░░░░░░░░░░	11.28%
+Monday      	70     commits	█████████████████████░░░░░░░░░	15.15%
+Tuesday     	53     commits	████████████████░░░░░░░░░░░░░░	11.47%
+Wednesday   	99     commits	██████████████████████████████	21.43%
+Thursday    	73     commits	██████████████████████░░░░░░░░	15.80%
+Friday      	56     commits	████████████████░░░░░░░░░░░░░░	12.12%
+Saturday    	59     commits	█████████████████░░░░░░░░░░░░░	12.77%
+Sunday      	52     commits	███████████████░░░░░░░░░░░░░░░	11.26%
 ```
 
 ```
